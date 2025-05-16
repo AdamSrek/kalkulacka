@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulačka kalorií</title>
+    <link rel="stylesheet" href="style-css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Kalkulačka kalorií</h1>
+        <form id="calorieForm">
+            <label for="age">Věk:</label>
+            <input type="number" id="age" placeholder="Zadejte věk" required>
+
+            <label for="gender">Pohlaví:</label>
+            <select id="gender" required>
+                <option value="">-- Vyberte --</option>
+                <option value="male">Muž</option>
+                <option value="female">Žena</option>
+            </select>
+
+            <label for="weight">Váha (kg):</label>
+            <input type="number" id="weight" placeholder="Zadejte váhu" required>
+
+            <label for="height">Výška (cm):</label>
+            <input type="number" id="height" placeholder="Zadejte výšku" required>
+
+            <label for="activity">Úroveň aktivity:</label>
+            <select id="activity" required>
+                <option value="">-- Vyberte --</option>
+                <option value="1.2">Sedavý (žádné cvičení)</option>
+                <option value="1.375">Lehká aktivita (cvičení 1–3x týdně)</option>
+                <option value="1.55">Střední aktivita (cvičení 4–5x týdně)</option>
+                <option value="1.725">Vysoká aktivita (denní cvičení)</option>
+                <option value="1.9">Velmi vysoká aktivita (intenzivní denní cvičení)</option>
+            </select>
+
+            <button type="submit">Spočítat</button>
+        </form>
+
+        <div class="result" id="result"></div>
+    </div>
+    <script src="js/js.js"></script>
+</body>
+</html>
